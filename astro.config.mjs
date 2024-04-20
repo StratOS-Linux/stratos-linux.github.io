@@ -16,7 +16,10 @@ export default defineConfig({
 	    // 	       './src/styles/custom.css',
             // ],
 	    social: {
-		github: 'https://github.com/StratOS-Linux/StratOS-iso',
+			github: 'https://github.com/StratOS-Linux/',
+			discord: 'https://discord.gg/NRU5GppP',
+			mastodon: 'https://fosstodon.org/@StratOS',
+			'x.com': 'https://twitter.com/StratOS_Linux'
 	    },
 	    sidebar: [
 		// {
@@ -27,7 +30,7 @@ export default defineConfig({
 		//     ],
 		// },
 		{
-		  label: 'Master tutorial',
+		  label: 'Getting Started',
 		  autogenerate: { directory: 'guides' }, 
 		},
 		{
