@@ -17,6 +17,8 @@ export default defineConfig({
             // ],
 	    social: {
 		github: 'https://github.com/StratOS-Linux/StratOS-iso',
+		discord: 'https://discord.gg/DVaXRCnCet',
+		mastodon: 'https://fosstodon.org/@StratOS',
 	    },
 	    sidebar: [
 		// {
