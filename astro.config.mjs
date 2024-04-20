@@ -38,6 +38,14 @@ export default defineConfig({
 		    autogenerate: { directory: 'tools' },
 		},
 		{
+			label: "Stratmacs",
+			autogenerate: {directory: 'stratmacs'},
+		},
+		{
+			label: "StratVIM",
+			autogenerate: {directory: 'stratvim'},
+		},
+		{
 		    label: 'Strata',
 		    autogenerate: { directory: 'strata' },
 		},
