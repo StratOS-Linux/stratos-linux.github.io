@@ -1,16 +1,17 @@
 :root {
     --sl-hue-accent: 950; /* New accent color */
-    --sl-color-accent-low: #3e4452;
-    --sl-color-accent: #3e4452;
+    --sl-color-accent: #434758; /* #1a1b26 */
+    --sl-color-accent-low: #1a1b26;
     --sl-color-accent-high: #769ff0;
-    --overlay-blurple: hsla(var(--sl-hue-accent), 40%, 40%, 0.4);
+    --overlay-blurple: hsla(var(--sl-hue-accent), 55%, 50%, 0.4);
 }
 
 :root[data-theme='light'] {
-    --sl-hue-accent: 210; /* New accent color for light theme */
-    --sl-color-accent-high: hsl(var(--sl-hue-accent), 90%, 20%);
-    --sl-color-accent: hsl(var(--sl-hue-accent), 100%, 50%);
-    --sl-color-accent-low: hsl(var(--sl-hue-accent), 98%, 80%);
+    --sl-hue-accent: 950; /* New accent color for light theme */
+    --sl-color-accent: #769ff0; /* TokyoNight light foreground */
+    --sl-color-accent-low: #434758; /* TokyoNight light selection */
+    --sl-color-accent-high: #1a1b26; /* TokyoNight light background */
+    --overlay-blurple: hsla(var(--sl-hue-accent), 85%, 50%, 0.4);
 }
 
 [data-has-hero] .page {
