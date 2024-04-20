@@ -10,7 +10,7 @@ export default defineConfig({
     integrations: [
 	starlight({
 	    plugins: [starlightImageZoom()],
-	    title: 'StratOS Documentation',
+	    title: 'StratOS Linux',
 	    customCss: process.env.NO_GRADIENTS ? [	'./src/styles/_global.css'] : ['./src/styles/landing.css', 	'./src/styles/_global.css'],
 	    // customCss: [
 	    // 	       './src/styles/custom.css',
