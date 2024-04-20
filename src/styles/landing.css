@@ -1,0 +1,37 @@
+:root {
+    --sl-hue-accent: 950; /* New accent color */
+    --sl-color-accent: #434758; /* #1a1b26 */
+    --sl-color-accent-low: #1a1b26;
+    --sl-color-accent-high: #769ff0;
+    --overlay-blurple: hsla(var(--sl-hue-accent), 55%, 50%, 0.4);
+}
+
+:root[data-theme='light'] {
+    --sl-hue-accent: 950; /* New accent color for light theme */
+    --sl-color-accent: #769ff0; /* TokyoNight light foreground */
+    --sl-color-accent-low: #434758; /* TokyoNight light selection */
+    --sl-color-accent-high: #1a1b26; /* TokyoNight light background */
+    --overlay-blurple: hsla(var(--sl-hue-accent), 85%, 50%, 0.4);
+}
+
+[data-has-hero] .page {
+  background: linear-gradient(215deg, var(--overlay-blurple), transparent 40%),
+    radial-gradient(var(--overlay-blurple), transparent 40%) no-repeat -60vw -40vh / 105vw 200vh,
+    radial-gradient(var(--overlay-blurple), transparent 65%) no-repeat 50% calc(100% + 20rem) / 60rem 30rem;
+}
+
+[data-has-hero] header {
+  border-bottom: 1px solid transparent;
+  background-color: transparent;
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+}
+
+[data-has-hero] .hero > img {
+  filter: drop-shadow(0 0 3rem var(--overlay-blurple));
+}
+
+iframe[id='stackblitz-iframe'] {
+  width: 100%;
+  min-height: 600px;
+}
