@@ -6,7 +6,7 @@ import starlightImageZoom from 'starlight-image-zoom'
 // https://astro.build/config
 export default defineConfig({
     site:  'https://stratos-linux.github.io',
-    base: '/',
+    base: 'StratOS-docs',
     plugins: [starlightImageZoom()],
     integrations: [
 	starlight({
