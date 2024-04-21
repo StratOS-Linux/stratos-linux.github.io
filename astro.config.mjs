@@ -5,7 +5,8 @@ import starlightImageZoom from 'starlight-image-zoom'
 
 // https://astro.build/config
 export default defineConfig({
-    site:  'https://stratos-linux.github.io/docs',
+    site:  'https://stratos-linux.github.io',
+    base: 'StratOS-docs',
     plugins: [starlightImageZoom()],
     integrations: [
 	starlight({
@@ -19,7 +20,7 @@ export default defineConfig({
 		github: 'https://github.com/StratOS-Linux/StratOS-iso',
 		discord: 'https://discord.gg/DVaXRCnCet',
 		mastodon: 'https://fosstodon.org/@StratOS',
-		'x.com': 'https://twitter.com/@stratos-linux',
+		'x.com': 'https://twitter.com/StratOS_Linux',
 	    },
 	    sidebar: [
 		// {
