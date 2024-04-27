@@ -13,9 +13,7 @@ export default defineConfig({
 	    plugins: [starlightImageZoom()],
 	    title: 'StratOS Linux',
 	    customCss: process.env.NO_GRADIENTS ? [	'./src/styles/_global.css'] : ['./src/styles/landing.css', 	'./src/styles/_global.css'],
-	    // customCss: [
-	    // 	       './src/styles/custom.css',
-            // ],
+	    // customCss: [ '@fontsource-variable/jetbrains-mono/400.css', '@fontsource-variable/jetbrains-mono/600.css' ],
 	    social: {
 		github: 'https://github.com/StratOS-Linux/StratOS-iso',
 		discord: 'https://discord.gg/DVaXRCnCet',
