@@ -1,7 +1,6 @@
 ---
 title: Configuring Stratmacs
 ---
-
 ## Assigning variables
 Use the `setq` Elisp function to assign variables.
 ```lisp
