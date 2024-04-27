@@ -1,3 +1,0 @@
----
-title: StratOS Emacs config
----
