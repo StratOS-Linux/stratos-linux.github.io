@@ -1,0 +1,15 @@
+---
+import { redirect } from 'astro/runtime';
+---
+
+<html>
+<head>
+    <title>Redirecting...</title>
+</head>
+<body>
+    <script>
+        // Use Astro's redirect function to redirect to the docs page
+        redirect('/StratOS-docs');
+    </script>
+</body>
+</html>
