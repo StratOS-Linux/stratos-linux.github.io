@@ -20,7 +20,7 @@ StratOS has out-of-the-box (OOTB) support for Ubuntu :
 sudo brl fetch ubuntu
 ```
 
-After installing Ubuntu as an strata on StratOS, we can run an update on its repos for safety:
+After installing Ubuntu as a stratum on StratOS, we can run an update on its repos for safety:
 
 
 ```bash
