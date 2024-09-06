@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+    ports:
+      - "3000:80"
+    networks:
+      - coolify
+
+networks:
+  coolify:
+    external: true
