@@ -1,3 +1,0 @@
----
-title: Rock (Rust rewrite)
----
