@@ -30,9 +30,14 @@ export default defineConfig({
         // 	{ label: 'Example Guide', link: '/guides/example/' },
         //     ],
         // },
+        // {
+        //   // label: "Master tutorial",
+        //   // autogenerate: { directory: "guides" },
+        //   slug: "guides/index",
+        // },
         {
-          label: "Master tutorial",
-          autogenerate: { directory: "guides" },
+          label: "Getting Started",
+          autogenerate: { directory: "intro" },
         },
         {
           label: "Tools",

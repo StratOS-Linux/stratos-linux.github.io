@@ -1,5 +1,5 @@
 ---
-title: Master tutorial
+title: Introduction
 description: Documentation designed to be devoured in as little time as possible
 ---
 New users will find themselves at home here.
