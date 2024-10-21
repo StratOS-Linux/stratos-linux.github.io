@@ -4,13 +4,13 @@ title: What is StratVIM?
 
 ![StratVIM working on StratOS](./images/StratVIM.png)
 
-# Introduction:
+## Introduction:
 StratVIM is a custom neovim configuration made for StratOS. 
 
-# What is it made using?
+## What is it made using?
 It is made using [lazy.nvim](https://github.com/folke/lazy.nvim) as its plugin manager. It contains some extra plugins like telescope-themes, cheatsheet.nvim etc for the convenience of the user.
 
-# What features does StratVIM have ?
+## What features does StratVIM have ?
 
 - Theme switching using [telescope-themes](https://github.com/andrew-george/telescope-themes)
 

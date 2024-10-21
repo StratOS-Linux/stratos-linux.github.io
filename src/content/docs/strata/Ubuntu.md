@@ -2,7 +2,7 @@
 title: Ubuntu on StratOS
 ---
 
-# What is Ubuntu? 
+## What is Ubuntu? 
 
 Ubuntu is a Linux distribution developed by Canonical. It is one of the most popular distribution due to its simplicity and ease of use for people new to Linux.
 
@@ -12,7 +12,7 @@ Ubuntu was one of the first Linux distributions to have a scheduled release cycl
 
 Ubuntu uses a Y.MM naming scheme for its version number. For example, Ubuntu 22.04 is meant to denote that this version of Ubuntu was released of the April of 2022.
 
-# How to use Ubuntu in StratOS
+## How to use Ubuntu in StratOS
 StratOS has out-of-the-box (OOTB) support for Ubuntu :
 
 
