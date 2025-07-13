@@ -16,12 +16,12 @@ export default defineConfig({
         ? ["./src/styles/_global.css"]
         : ["./src/styles/landing.css", "./src/styles/_global.css"],
       // customCss: [ '@fontsource-variable/jetbrains-mono/400.css', '@fontsource-variable/jetbrains-mono/600.css' ],
-      social: {
-        github: "https://github.com/StratOS-Linux/StratOS-iso",
-        discord: "https://discord.gg/DVaXRCnCet",
-        mastodon: "https://fosstodon.org/@StratOS",
-        "x.com": "https://twitter.com/StratOS_Linux",
-      },
+      social: [
+		  { icon:'github', label:"GitHub", href:"https://github.com/StratOS-Linux"},
+		  { icon:'discord' ,label: "Discord", href: "https://discord.gg/DVaXRCnCet"},
+		  { icon:'mastodon' ,label: "Mastodon" , href: "https://fosstodon.org/@StratOS"},
+		  { icon:'x.com', label:"X (Formerly known as Twitter)", href: "https://twitter.com/StratOS_Linux"},
+	  ],
       sidebar: [
         // {
         //     label: 'Guides',
