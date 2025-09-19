@@ -1,6 +1,7 @@
 ---
 title: What is Stratmacs?
 ---
+![Screnshot of Stratmacs](./images/stratmacs.png)
 [Stratmacs](https://github.com/StratOS-linux/Stratmacs) is a bespoke Emacs [configuration](https://github.com/StratOS-Linux/Stratmacs/blob/main/stratmacs.org) created for StratOS. 
 It is a general-purpose, unopinionated configuration that serves as a starter kit for Emacs. 
 It includes several (minor and major) Emacs tweaks that seasoned users use in their configs.

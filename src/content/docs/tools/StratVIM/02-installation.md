@@ -11,7 +11,7 @@ title: Installing StratVIM
 - Clone the [StratVIM](https://github.com/StratOS-Linux/StratVIM) git repository into the .config folder:
 
 ```bash
-git clone https://github.com/lugvitc/StratVIM.git ~/.config/nvim
+git clone https://github.com/StratOS-Linux/StratVIM.git ~/.config/nvim
 ```
 
 ## Updating plugins in StratVIM :
