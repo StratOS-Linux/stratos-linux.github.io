@@ -1,0 +1,189 @@
+---
+// src/components/DownloadDropdown.astro
+---
+
+<div class="download-dropdown-container">
+  <button class="download-dropdown-btn" id="downloadDropdownBtn">
+    <span>Download StratOS</span>
+    <span class="dropdown-arrow">▼</span>
+  </button>
+  <div class="download-dropdown-menu" id="downloadDropdown">
+    <a href="https://downloads.stratos-linux.org/hyprland-iso/" class="dropdown-item">
+      <span class="version">StratOS Hyprland ISO</span>
+      <span class="file-size">Latest Build</span>
+    </a>
+    <a href="https://downloads.stratos-linux.org/niri-iso/" class="dropdown-item">
+      <span class="version">StratOS Niri ISO</span>
+      <span class="file-size">Latest Build</span>
+    </a>
+    <a href="https://downloads.stratos-linux.org/gnome-iso/" class="dropdown-item">
+      <span class="version">StratOS GNOME ISO</span>
+      <span class="file-size">Latest Build</span>
+    </a>
+    <a href="https://downloads.stratos-linux.org/trial-iso/" class="dropdown-item">
+      <span class="version">StratOS Trial ISO</span>
+      <span class="file-size">Try Before Install</span>
+    </a>
+    <a href="https://downloads.stratos-linux.org/" class="dropdown-item view-all">
+      <span class="version">View All Downloads</span>
+      <span class="file-size">Main Mirror</span>
+    </a>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const dropdownBtn = document.getElementById("downloadDropdownBtn");
+    const dropdownMenu = document.getElementById("downloadDropdown");
+
+    if (dropdownBtn && dropdownMenu) {
+      const dropdownArrow = dropdownBtn.querySelector(".dropdown-arrow");
+
+      dropdownBtn.addEventListener("click", function (e) {
+        e.stopPropagation();
+        dropdownMenu.classList.toggle("show");
+        if (dropdownArrow) dropdownArrow.classList.toggle("rotate");
+      });
+
+      document.addEventListener("click", function () {
+        dropdownMenu.classList.remove("show");
+        if (dropdownArrow) dropdownArrow.classList.remove("rotate");
+      });
+
+      dropdownMenu.addEventListener("click", function (e) {
+        e.stopPropagation();
+      });
+    }
+  });
+</script>
+
+<style>
+ .download-dropdown-container {
+  position: relative;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.download-dropdown-btn {
+  background: transparent;
+  color: #9ab4ff;
+  border: 2px solid #9ab4ff;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.download-dropdown-btn:hover {
+  background: #9ab4ff;
+  color: #0d1117;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.download-dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #0f111a; /* dark background */
+  min-width: 280px;
+  border-radius: 8px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  z-index: 1000;
+  margin-top: 8px;
+  overflow: hidden;
+}
+
+.download-dropdown-menu.show {
+  display: block;
+  animation: dropdownFadeIn 0.2s ease;
+}
+
+@keyframes dropdownFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  color: #e0e6ff;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  transition: background-color 0.2s ease, color 0.2s ease;
+  background: transparent;
+}
+
+.dropdown-item:hover {
+  background: rgba(154, 180, 255, 0.15);
+  color: #ffffff;
+}
+
+.dropdown-item:last-child {
+  border-bottom: none;
+}
+
+.dropdown-item.view-all {
+  background: rgba(154, 180, 255, 0.1);
+  font-weight: 600;
+}
+
+.dropdown-item.view-all:hover {
+  background: rgba(154, 180, 255, 0.2);
+}
+
+.version {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.file-size {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  color: #c6d1ff;
+}
+
+.dropdown-arrow {
+  transition: transform 0.3s ease;
+  font-size: 0.8rem;
+}
+
+.dropdown-arrow.rotate {
+  transform: rotate(180deg);
+}
+
+@media (max-width: 768px) {
+  .download-dropdown-container {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .download-dropdown-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .download-dropdown-menu {
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 250px;
+  }
+}
+</style>
