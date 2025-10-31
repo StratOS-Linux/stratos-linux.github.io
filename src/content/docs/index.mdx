@@ -6,13 +6,13 @@ hero:
   tagline: Welcome to the homepage of the StratOS project!
   image:
     file: ../../assets/stratos.webp
-  actions:
-    - text: Go to docs
-      link: /intro
-      icon: right-arrow
-      variant: primary
-    - text: Download
-      icon: external
-      variant: minimal
-      link: https://downloads.stratos-linux.org/
 ---
+
+import DownloadDropdown from '../../components/DownloadDropdown.astro'
+
+<div style="display: flex; align-items: center; gap: 1rem; margin-top: 2rem;">
+  <a href="/intro" class="button primary" style="text-decoration: none;">
+    Go to docs →
+  </a>
+  <DownloadDropdown client:load />
+</div>
