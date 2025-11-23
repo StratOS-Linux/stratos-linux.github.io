@@ -3,13 +3,17 @@ title: Hyprland Configuration and Keybinds
 
 ---
 
-## What is Hyprland?
+# What is Hyprland?
 
 Hyprland is a dynamic tiling window manager for Linux which is highly customisable, visually appealing and lightweight. It is a very popular choice for Linux users who like a modern window manager with features like rounded corners, smooth animations and Wayland support.
 
 StratOS Linux offers a Hyprland spin as an option to users trying to venture into the world of Window Managers. The config provided by default is very basic with a few EWW widgets. Users can feel free to customise their Hyprland configs as they see fit by using it as a starting point.
 
-# Application Control
+# Hyprland Keybindings
+
+These are the default keybindings included in the StratOS Hyprland spin. You can take a look at them and change them according to your requirements from the configuration files if you wish to do so.
+
+### Application Control
 import { Kbd } from 'starlight-kbd/components';
 
 |Description| Keybinding|
@@ -19,11 +23,19 @@ import { Kbd } from 'starlight-kbd/components';
 | Open File Manager (Thunar) | <Kbd linux="Super+E"/>|
 | Open Terminal (Ghostty) | <Kbd linux="Super+T"/>| 
 | Toggle Conky Widget| <Kbd linux="Super+C"/>|
-| Open Clipboard Manager|<Kbd linux="Super+V"/>|
 | Toggle EWW widgets| <Kbd linux="Super+W"/>|
-| Close focused window | <Kbd linux="Super+Q"/>|
 
-# Window Management
+### System Controls
+|Description|Keybinding|
+|-----------|----------|
+| Taking Screenshot|<Kbd linux="Super+Shift+S"/>|
+|Recording Screen|<Kbd linux="Super+Shift+R"/>|
+| Close focused window | <Kbd linux="Super+Q"/>|
+| Open Clipboard Manager|<Kbd linux="Super+V"/>|
+| Lock Screen| <Kbd linux="Super+L"/>|
+| Exit Hyprland|<Kbd linux="Super+Shift+L"/>|
+
+### Window Management
 
 |Description|Keybinding|
 |-----------|----------|
@@ -31,6 +43,25 @@ import { Kbd } from 'starlight-kbd/components';
 |Move active window between workspaces|<Kbd linux="Super+Shift+[0-9]"/>|
 |Move active window silently between workspaces|<Kbd linux="Super+Alt+[0-9]"/>|
 |Toggle scratchpad|<Kbd linux="Super+Tab"/>|
+
+#### Moving Focus between Windows
+|Description|Keybinding|
+|----------|------------|
+|Shift Focus to the Left Window|<Kbd linux="Super+Shift+LeftArrowKey"/>|
+|Shift Focus to the Right| <Kbd linux="Super+Shift+RightArrowKey"/>|
+|Shift Focus to the Top|<Kbd linux="Super+Shift+UpArrowKey"/>|
+|Shift Focus to the Bottom|<Kbd linux="Super+Shift+DownArrowKey"/>|
+
+
+#### Moving Windows
+
+|Description|Keybinding|
+|-----------|-----------|
+|Move window to the left|<Kbd linux="Super+Shift+LeftArrowKey"/>|
+|Move window to the right|<Kbd linux="Super+Shift+RightArrowKey"/>|
+|Move window upwards|<Kbd linux="Super+Shift+UpArrowKey"/>|
+|Move window downwards|<Kbd linux="Super+Shift+DownArrowKey"/>|
+
 
 
 
