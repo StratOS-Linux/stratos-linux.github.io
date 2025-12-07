@@ -10,11 +10,11 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/starlight": "^0.34.5",
+    "@astrojs/starlight": "^0.37.0",
     "@fontsource-variable/jetbrains-mono": "^5.0.21",
     "@fontsource/jetbrains-mono": "^5.0.20",
     "@octokit/rest": "^22.0.0",
-    "astro": "^5.11.0",
+    "astro": "^5.16.4",
     "sharp": "^0.34.3",
     "starlight-image-zoom": "^0.2.0",
     "starlight-kbd": "^0.2.1"
