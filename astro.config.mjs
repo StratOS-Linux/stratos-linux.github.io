@@ -60,15 +60,15 @@ export default defineConfig({
         // },
         {
           label: "Getting Started",
-          autogenerate: { directory: "intro" },
+          items: [{ autogenerate: { directory: "intro" } }],
         },
         {
           label: "Tools",
-          autogenerate: { directory: "tools" },
+          items: [{ autogenerate: { directory: "tools" } }],
         },
         {
           label: "Configuration",
-          autogenerate: { directory: "configuration" },
+          items: [{ autogenerate: { directory: "configuration" } }],
         },
       ],
     }),
